@@ -21,7 +21,7 @@ st.write("A Content-Based Recommender powered by `CountVectorizer` and `Cosine S
 @st.cache_data
 def load_data():
     # Replace 'movies.csv' with your dataset path if different
-    movies = pd.read_csv('movies.csv')
+    movies = pd.read_csv('dataset/movies.csv')
     movies['genres'] = movies['genres'].fillna('')
     return movies
 
