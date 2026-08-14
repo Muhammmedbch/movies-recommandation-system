@@ -8,11 +8,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 # ---------------------------------------------------------
 st.set_page_config(
     page_title="Movie Recommender System",
-    page_icon="🎬",
+    page_icon="⌬",
     layout="wide"
 )
 
-st.title("🎬 Movie Recommendation System")
+st.title("Movie Recommendation System")
 st.write("A Content-Based Recommender powered by `CountVectorizer` and `Cosine Similarity`.")
 
 # ---------------------------------------------------------
@@ -64,7 +64,7 @@ def recommend_movies(title, top_n=5):
 # ---------------------------------------------------------
 # 3. Streamlit UI Controls
 # ---------------------------------------------------------
-st.sidebar.header("⚙️ User Controls")
+st.sidebar.header("☰ Menu")
 
 # Dropdown for selecting a movie
 selected_movie = st.sidebar.selectbox(
@@ -81,7 +81,7 @@ top_n = st.sidebar.slider(
 )
 
 # Recommendation Trigger Button
-if st.sidebar.button("Get Recommendations 🚀"):
+if st.sidebar.button("Get Recommendations "):
     st.subheader(f"Recommendations for: **{selected_movie}**")
     
     # Fetch recommendations
